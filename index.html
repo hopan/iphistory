@@ -33,6 +33,7 @@
 				show_ip_history();
 				
 				const newNode = document.createElement("div");
+				newNode.style.textAlign = "center";
 				newNode.setHTML(new Date().toISOString() + ': <span style="color:red;">' + this.responseText + '</span>');
 				document.body.insertBefore(newNode, document.body.firstChild);
 			}
