@@ -50,8 +50,8 @@
 		interval = parseInt(interval) * 1000;
 	} else {
 		interval = 10000;
+		document.location.search = "interval=10"
 	}
 	
 	setInterval(get_ip, interval);
-
 </script>
