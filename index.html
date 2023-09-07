@@ -34,7 +34,7 @@
 				
 				const newNode = document.createElement("div");
 				newNode.setHTML(new Date().toISOString() + ": " + this.responseText);
-				document.body.appendChild(newNode);
+				document.body.insertBefore(newNode, document.body.firstChild);
 			}
 		}
 		// Sending our request
