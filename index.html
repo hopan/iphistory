@@ -46,6 +46,12 @@
 	
 	const urlParams = new URLSearchParams(window.location.search);
 	let interval = urlParams.get('interval');
-	setInterval(get_ip, parseInt(interval) * 1000);
+	if (interval) {
+		interval = parseInt(interval) * 1000;
+	} else {
+		interval = 10000;
+	}
+	
+	setInterval(get_ip, interval);
 
 </script>
